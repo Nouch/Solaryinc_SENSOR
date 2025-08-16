@@ -2,8 +2,7 @@
 <img width="393" height="252" alt="image" src="https://github.com/user-attachments/assets/7ba6656a-436a-4368-b807-47c5a0dc1cf3" />
 
 Solaryinc_SENSOR est une application légère pour Linux qui affiche les températures des capteurs système (CPU, GPU, stockage) dans la barre de notification (tray).  
-Elle utilise [OpenLinkHub](https://github.com/jurkovic-nikola/OpenLinkHub) pour récupérer les données et met à jour toutes les 5 secondes.  
-Compatible avec le [OpenLinkHubtray](https://github.com/jurkovic-nikola/openlinkhub-tray).
+Elle utilise [OpenLinkHub](https://github.com/jurkovic-nikola/OpenLinkHub) & [OpenLinkHubtray](https://github.com/jurkovic-nikola/openlinkhub-tray) pour récupérer les données et met à jour toutes les 5 secondes. 
 
 ---
 
