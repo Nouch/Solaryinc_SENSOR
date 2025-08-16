@@ -115,3 +115,35 @@ Si l’icône ne s’affiche pas ou si le service ne démarre pas, vérifier les
 ```bash
 journalctl -u solaryinc_sensors.service -f
 ```
+
+---
+
+## Personnalisation des noms de capteurs
+
+Le script utilise le dictionnaire `SENSOR_IDS` pour identifier les capteurs :
+
+```python
+SENSOR_IDS = {
+    "CPU": "cpu_temp",
+    "GPU": "gpu_temp_0",
+    "nmve1": "storage_temp-hwmon1",
+    "nmve2": "storage_temp-hwmon2"
+}
+```
+Modifier uniquement les noms affichés
+
+Pour changer le nom visible dans le tray (par exemple pour les NVMe) :
+
+    Ouvrez Solaryinc_Sensors_tray.py.
+
+    Repérez la section SENSOR_IDS.
+
+    Modifiez uniquement les clés :
+
+        Par exemple, "nmve1" peut devenir "NVMe Système".
+
+        "nmve2" peut devenir "NVMe Jeux".
+
+        Les valeurs ("storage_temp-hwmon1" et "storage_temp-hwmon2") doivent rester inchangées.
+
+    Sauvegardez et relancez le script pour voir les nouveaux noms apparaître dans le tray.
