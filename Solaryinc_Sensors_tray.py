@@ -18,8 +18,8 @@ ICON_PATH = '/opt/solaryinc_sensors/solaryinc_icon.png'
 SENSOR_IDS = {
     "CPU": "cpu_temp",
     "GPU": "gpu_temp_0",
-    "M480": "storage_temp-hwmon1",
-    "WD": "storage_temp-hwmon2"
+    "nmve1": "storage_temp-hwmon1",
+    "nmve2": "storage_temp-hwmon2"
 }
 
 def get_temperatures():
